@@ -16,6 +16,7 @@ const Navbar = () => {
                 <li className="p-4">Team</li>
                 <li className="p-4">Inscription</li>
                 <li className="p-4">Tarifs</li>
+                <li className="p-4">Boutique</li>
                 <li className="p-4">Contact</li>
             </ul>
             <div onClick={handleNav} className="block md:hidden">
@@ -28,6 +29,7 @@ const Navbar = () => {
                 <li className="p-4 border-b border-gray-600">Team</li>
                 <li className="p-4 border-b border-gray-600">Inscription</li>
                 <li className="p-4 border-b border-gray-600">Tarifs</li>
+                <li className="p-4 border-b border-gray-600">Boutique</li>
                 <li className="p-4">Contact</li>
                 </ul>
             </div>
