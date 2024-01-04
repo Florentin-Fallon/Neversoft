@@ -10,7 +10,7 @@ function Team() {
             <Navbar />
         </div>
       <h2 className='text-white'>Salut vous êtes sur la page team</h2>
-      <Link to="/" className='text-white'>Retour à l'accueil</Link>
+      <Link to="/" className='text-white'>Retour à l'accueil bg</Link>
       <div>
         <Footer />
       </div>
