@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Neversoft/static/css/main.9977f059.css",
-    "main.js": "/Neversoft/static/js/main.c0e8de5d.js",
+    "main.css": "/Neversoft/static/css/main.53bda0f1.css",
+    "main.js": "/Neversoft/static/js/main.eef56e01.js",
     "index.html": "/Neversoft/index.html",
-    "main.9977f059.css.map": "/Neversoft/static/css/main.9977f059.css.map",
-    "main.c0e8de5d.js.map": "/Neversoft/static/js/main.c0e8de5d.js.map"
+    "main.53bda0f1.css.map": "/Neversoft/static/css/main.53bda0f1.css.map",
+    "main.eef56e01.js.map": "/Neversoft/static/js/main.eef56e01.js.map"
   },
   "entrypoints": [
-    "static/css/main.9977f059.css",
-    "static/js/main.c0e8de5d.js"
+    "static/css/main.53bda0f1.css",
+    "static/js/main.eef56e01.js"
   ]
 }
