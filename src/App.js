@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Home';
 import Team from './Team';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Inscription from './Inscription';
 import Tarifs from './Tarifs';
 import Boutique from './Boutique';
