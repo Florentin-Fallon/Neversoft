@@ -5,6 +5,7 @@ const Card = ({
     imgAlt,
     title,
     buttonText,
+    description,
     link,
 }) => {
     return (

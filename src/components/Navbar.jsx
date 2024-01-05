@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center h-24 px-4 max-w-[1240px] mx-auto text-white">
-            <h1 className="w-full text-3xl font-bold text-[white] m-4">Neversoft</h1>
+            <h1 className="w-full text-3xl font-bold text-[white] m-4"><Link to="/">Neversoft</Link></h1>
             <ul className="hidden md:flex">
                 <li className="p-4"><Link to="/">Accueil</Link></li>
                 <li className="p-4"><Link to="/team">Team</Link></li>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
             <div className={nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 " : "fixed left-[-100%]"}>
-            <h1 className="w-full text-3xl font-bold text-[white] m-4">Neversoft</h1>
+            <h1 className="w-full text-3xl font-bold text-[white] m-4"><Link to="/">Neversoft</Link></h1>
                 <ul className="uppercase p-4">
                 <li className="p-4 border-b border-gray-600"><Link to="/">Accueil</Link></li>
                 <li className="p-4 border-b border-gray-600"><Link to="/team">Team</Link></li>
