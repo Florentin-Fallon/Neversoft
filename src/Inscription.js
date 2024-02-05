@@ -20,7 +20,7 @@ function Inscription() {
             <a href={require('./Assets/Fiche-inscription.pdf')} download="inscription.pdf" className='text-white flex justify-center mt-6'>
               <NotifyButton title="Téléchargez la fiche d'inscription" />
             </a>
-            <p className='text-white text-center text-xl mt-8'>Envoyez-nous votre fiche d'inscription complétée par email à : <a href="mailto:club.neversoft@gmail.com">club.neversoft@gmail.com</a></p>
+            <p className='text-white text-center text-xl mt-8'>Envoyez-nous votre fiche d'inscription complétée par email à : <a href="mailto:club.neversoft@gmail.com" className='underline decoration-sky-500 underline-offset-4'>club.neversoft@gmail.com</a></p>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ function Inscription() {
             <p className='text-white text-center mt-4'>Dans notre club, nous aurons 2 licences différentes, les voicis :</p>
           </div>
           <div className='flex justify-center align-middle flex-wrap mt-12'>
-          <div className='flex mx-24 mb-4'>
+          <div>
             <Licence 
             nameLicence={"Licence Loisir"}
             textOne={"Pour les joueurs occasionnels"}
@@ -40,7 +40,7 @@ function Inscription() {
             price={"50€"}
             />
           </div>
-          <div>
+          <div className='ml-16'>
             <Licence 
             nameLicence={"Licence Compétition"}
             textOne={"Pour les joueurs réguliers"}

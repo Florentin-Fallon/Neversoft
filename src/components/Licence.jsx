@@ -18,7 +18,7 @@ function Licence({
         <p className='text-black font-semibold text-center pt-4 pb-2'> Avantages supplémentaires :</p>
         <p className='text-black text-sm text-center'>{textThree}</p>
         <div className='flex flex-col'>
-          <button className='text-center text-sm w-[50%] rounded-lg bg-blue-700 hover:bg-blue-500 text-white m-auto p-1 mt-10 mb-2'>{price}</button>
+          <button className='text-center text-sm w-[50%] rounded-lg bg-blue-700 text-white m-auto p-1 mt-10 mb-2'>{price}</button>
         </div>
       </div>
     </div>
