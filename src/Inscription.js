@@ -31,7 +31,7 @@ function Inscription() {
             <p className='text-white text-center mt-4'>Dans notre club, nous aurons 2 licences différentes, les voicis :</p>
           </div>
           <div className='flex justify-center align-middle flex-wrap mt-12'>
-          <div>
+          <div className='flex mx-4 mb-4'>
             <Licence 
             nameLicence={"Licence Loisir"}
             textOne={"Pour les joueurs occasionnels"}
@@ -40,7 +40,7 @@ function Inscription() {
             price={"50€"}
             />
           </div>
-          <div className='ml-16'>
+          <div className='flex mx-4 mb-4'>
             <Licence 
             nameLicence={"Licence Compétition"}
             textOne={"Pour les joueurs réguliers"}
