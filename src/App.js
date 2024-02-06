@@ -6,6 +6,9 @@ import Inscription from './Inscription';
 import Tarifs from './Tarifs';
 import Boutique from './Boutique';
 import Contact from './Contact';
+import Airsoft from './Airsoft';
+import Securite from './Securite';
+import Avantages from './Avantages';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/boutique" element={<Boutique />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/airsoft" element={<Airsoft />} />
+          <Route path="/securite" element={<Securite />} />
+          <Route path="/avantages" element={<Avantages />} />
         </Routes>
       </div>
     </Router>
