@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] flex mx-auto pt-16 pb-4 px-4 mt-24 lg:grid-cols-3 gap-8 text-white text-center justify-center'>
+    <div className='max-w-[1240px] flex mx-auto pt-12 pb-4 px-4 mt-24 lg:grid-cols-3 gap-8 text-white text-center justify-center'>
         <div>
             <h1 className='w-full text-3xl font-bold text-white'>Neversoft</h1>
             <p className='text-center pt-4'>Bienvenue chez Neversoft, le club d'airsoft où la passion et l'action se rejoignent pour créer des moments inoubliables. 

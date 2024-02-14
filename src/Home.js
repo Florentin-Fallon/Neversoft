@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Card from './components/Card';
 import Footer from './components/Footer';
+import SimpleCarousel from './components/SimpleCarousel';
 
 function Home() {
   return (
@@ -40,10 +41,25 @@ function Home() {
         />
       </div>
     </div>
+      <div>
+        <SimpleCarousel 
+        title={"Nos Partenaires"}
+        imgSrc={"https://picsum.photos/200/300.jpg"}
+        imgAlt={"Générale Airsoft"}
+        imgSrc2={"https://www.terre.tv/wp-content/uploads/2022/12/media-pratiquer-pourquoi-1024x683.jpg"}
+        imgAlt2={"Airsoft France"}
+        imgSrc3={"https://picsum.photos/200/300"}
+        imgAlt3={"Airsoft Europe"}
+        imgSrc4={"https://picsum.photos/200/300/?blur"}
+        imgAlt4={"Airsoft International"}
+        imgSrc5={"https://picsum.photos/200/300?grayscale"}
+        imgAlt5={"Airsoft World"}
+        />
+      </div>
     <div>
       <Footer />
     </div>
-  </div>
+    </div>
   )
 }
 

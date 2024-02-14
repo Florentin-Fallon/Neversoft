@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from 'react-typed';
+import { ReactTyped } from "react-typed";
 
 const Page = () => {
     return ( 
@@ -10,7 +10,7 @@ const Page = () => {
                 <p className=" md:text-xl sm:text-xl text-xl">
                     Unis par la passion, guidés par
                 </p>
-                <Typed
+                <ReactTyped
                 className=" md:text-xl sm:text-xl text-xl p-2"
                 strings={["l'adrénaline","l'émotion", "l'énergie", "les frissons", "la vitesse", "la compétition"]}
                 typeSpeed={120}
