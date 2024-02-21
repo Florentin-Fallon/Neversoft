@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import { Link } from 'react-router-dom'
 import Footer from './components/Footer'
+import Maintenance from './components/Maintenance'
 
 function Tarifs() {
   return (
@@ -9,8 +9,11 @@ function Tarifs() {
         <div>
             <Navbar />
         </div>
-        <h2 className='text-white'>Salut vous êtes sur Tarifs</h2>
-        <Link to="/" className='text-white'>Retour à l'accueil</Link>
+        <div>
+          <Maintenance 
+          text={"La page tarifs"}
+          />
+        </div>
         <div>
         <Footer />
       </div>
