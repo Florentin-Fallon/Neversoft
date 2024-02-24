@@ -38,7 +38,7 @@ function Team() {
             </div>
             <div>
                 <h2 className='text-white text-center text-3xl mt-6'>Notre Histoire</h2>
-                <div className='text-white text-center align-middle mx-24 border border-white p-4 rounded-lg'>
+                <div className='text-white text-center align-middle mx-24 border border-white p-4 rounded-lg mt-4'>
                     <p >
                         Passionné d'airsoft depuis mes 12 ans, je suis devenu le président du club. 
                         Aux côtés de Mathias, vice-président, et de Laura, en tant que trésorière et secrétaire. 
