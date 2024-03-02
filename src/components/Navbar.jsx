@@ -17,7 +17,6 @@ const Navbar = () => {
                 <li className="p-4 hover:text-blue-500"><Link to="/team">Team</Link></li>
                 <li className="p-4 hover:text-blue-500"><Link to="/inscription">Inscription</Link></li>
                 <li className="p-4 hover:text-blue-500"><Link to="/tarifs">Tarifs</Link></li>
-                <li className="p-4 hover:text-blue-500"><Link to="/boutique">Boutique</Link></li>
                 <li className="p-4 hover:text-blue-500"><Link to="/contact">Contact</Link></li>
             </ul>
             <div onClick={handleNav} className="block md:hidden">
@@ -30,7 +29,6 @@ const Navbar = () => {
                 <li className="p-4 border-b border-gray-600"><Link to="/team">Team</Link></li>
                 <li className="p-4 border-b border-gray-600"><Link to="/inscription">Inscription</Link></li>
                 <li className="p-4 border-b border-gray-600"><Link to="/tarifs">Tarifs</Link></li>
-                <li className="p-4 border-b border-gray-600"><Link to="/boutique">Boutique</Link></li>
                 <li className="p-4"><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>

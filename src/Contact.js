@@ -1,52 +1,83 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 
 function Contact() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm("myyrjbvv");
 
-  const handleSendEmail = () => {
-    const mailtoLink = `mailto:club.neversoft@gmail.com?subject=Message%20de%20${encodeURIComponent(firstName)}%20${encodeURIComponent(lastName)}&body=${encodeURIComponent(message)}`;
-    window.location.href = mailtoLink;
+  const handleFormSubmit = async (e) => {
+    e.preventDefault(); // Empêche le rechargement de la page
+
+    // Soumet les données du formulaire via Formspree
+    await handleSubmit(e);
   };
 
-  return (
-    <div>
+  if (state.succeeded) {
+    return <div>
       <div>
-        <Navbar />
+        <NavBar />
       </div>
-      <div className="text-center text-white w-full mt-24">
-        <h1 className="text-4xl font-bold mb-8">Contactez-nous !</h1>
-        <div className="mx-auto max-w-md">
-          <input
-            type="text"
-            placeholder="Prénom"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            className="block w-full px-4 py-2 rounded bg-gray-200 text-black mb-2"
-          />
-          <input
-            type="text"
-            placeholder="Nom"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            className="block w-full px-4 py-2 rounded bg-gray-200 text-black mb-2"
-          />
-          <textarea
-            placeholder="Message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className="block w-full px-4 py-2 rounded bg-gray-200 text-black mb-4"
-            rows="4"
-          ></textarea>
-          <button onClick={handleSendEmail} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Envoyer un e-mail</button>
+      <div className='flex justify-center items-center my-40'>
+        <div>
+          <p className='text-white text-4xl mb-4' id='contact'>Merci pour votre message !</p>
+          <p className='text-white text-lg text-center'>Nous vous répondrons dès que possible.</p>
         </div>
       </div>
       <div>
         <Footer />
+        </div>
       </div>
+    
+  }
+
+  return (
+    <div>
+      <div>
+        <NavBar />
+      </div>
+    <div className='flex justify-center items-center h-screen'>
+      <div className='w-[50%]'>
+        <h1 className='text-5xl text-center text-white mb-16' id='contact'>Contact</h1>
+        <div className="max-w-md mx-auto">
+          <form onSubmit={handleFormSubmit} className="mb-8">
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-white text-sm font-semibold mb-2">Adresse e-mail:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-6"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-white text-sm font-semibold mb-2">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-6"
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
+            <button type="submit" disabled={state.submitting} className="bg-orange-500 hover:bg-orange-400 flex items-center justify-center text-white font-semibold py-2 px-4 rounded-lg w-full">
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <Footer />
+    </div>
     </div>
   );
 }

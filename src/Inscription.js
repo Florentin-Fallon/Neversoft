@@ -34,19 +34,16 @@ function Inscription() {
           <div className='flex mx-4 mb-4'>
             <Licence 
             nameLicence={"Licence Loisir"}
-            textOne={"Pour les joueurs occasionnels"}
-            textTwo={"Pas de compétition"}
-            textThree={"Pas de classement"}
-            price={"50€"}
+            textThree={"Patch de l'équipe offert"}
+            price={"60€"}
             />
           </div>
           <div className='flex mx-4 mb-4'>
             <Licence 
-            nameLicence={"Licence Compétition"}
-            textOne={"Pour les joueurs réguliers"}
-            textTwo={"Compétition possible"}
-            textThree={"Classement possible"}
-            price={"70€"}
+            nameLicence={"Licence Sportive"}
+            text={"Accès aux compétitions"}
+            textThree={"Patch de l'équipe offert"}
+            price={"85€"}
             />
           </div>
           </div>

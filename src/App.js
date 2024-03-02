@@ -4,7 +4,6 @@ import Team from './Team';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Inscription from './Inscription';
 import Tarifs from './Tarifs';
-import Boutique from './Boutique';
 import Contact from './Contact';
 import Airsoft from './Airsoft';
 import Securite from './Securite';
@@ -19,7 +18,6 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/tarifs" element={<Tarifs />} />
-          <Route path="/boutique" element={<Boutique />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/airsoft" element={<Airsoft />} />
           <Route path="/securite" element={<Securite />} />
