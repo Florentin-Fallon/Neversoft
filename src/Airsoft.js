@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import { useEffect } from 'react';
+import Footer from './components/Footer';
 
 function Airsoft() {
   useEffect(() => {
@@ -43,7 +44,10 @@ function Airsoft() {
                         <p className='text-white '>L’airsoft, ce n’est donc pas seulement une discipline qui permet de développer ses compétences physiques et son sens tactique, c’est aussi une grande famille où règnent la camaraderie, la fraternité et le respect de l’autre !</p>
         </div>
         <div className='flex justify-center my-8'>
-        <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 rounded-lg'><Link to="/">Retour</Link></button>
+        <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 rounded-lg mt-12'><Link to="/">Retour</Link></button>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
   )
