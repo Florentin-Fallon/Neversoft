@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Neversoft/static/css/main.3b445e81.css",
-    "main.js": "/Neversoft/static/js/main.59410472.js",
+    "main.js": "/Neversoft/static/js/main.dd532870.js",
     "static/media/mathias.webp": "/Neversoft/static/media/mathias.a9a18591ddbd9e3d4b63.webp",
     "static/media/flo.webp": "/Neversoft/static/media/flo.be11fda0089f61551892.webp",
     "static/media/inscription.jpg": "/Neversoft/static/media/inscription.55be949313cb74e0b9ae.jpg",
@@ -10,10 +10,10 @@
     "static/media/Fiche-inscription.pdf": "/Neversoft/static/media/Fiche-inscription.ae23c75482e08ab89808.pdf",
     "index.html": "/Neversoft/index.html",
     "main.3b445e81.css.map": "/Neversoft/static/css/main.3b445e81.css.map",
-    "main.59410472.js.map": "/Neversoft/static/js/main.59410472.js.map"
+    "main.dd532870.js.map": "/Neversoft/static/js/main.dd532870.js.map"
   },
   "entrypoints": [
     "static/css/main.3b445e81.css",
-    "static/js/main.59410472.js"
+    "static/js/main.dd532870.js"
   ]
 }
