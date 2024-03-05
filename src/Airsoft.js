@@ -11,10 +11,12 @@ function Airsoft() {
   return (
     <div className='flex flex-col'>
       <div>
-        <Navbar />
+      <Navbar />
       </div>
+        <div className='text-white text-center my-8 px-4'>
       <h1 className='text-3xl text-white text-center my-8 px-4'>L’Airsoft : qu’est-ce que c’est ?</h1>
-        <div className='leading-relaxed text-justify text-white px-4'>
+      </div>
+        <div className='text-justify text-white px-4'>
           <h1 className='text-white text-3xl mb-12 mt-8 px-24 underline underline-offset-8'>Comment se déroule une partie d’airsoft ?</h1>
           <p className='text-white px-24'>L’airsoft est une discipline née au Japon dans les années 1970. Une époque durant laquelle la possession d’arme était alors formellement interdite par la loi.</p>
           <p className='text-white px-24'>Le principe de cette activité est on ne peut plus simple : plusieurs joueurs, également appelés « airsofteurs », 
@@ -44,7 +46,9 @@ function Airsoft() {
                         <p className='text-white px-24'>L’airsoft, ce n’est donc pas seulement une discipline qui permet de développer ses compétences physiques et son sens tactique, c’est aussi une grande famille où règnent la camaraderie, la fraternité et le respect de l’autre !</p>
         </div>
         <div className='flex justify-center my-8'>
-        <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 px-8 rounded-lg mt-12'><Link to="/">Retour</Link></button>
+        <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 px-8 rounded-lg mt-12'>
+          <Link to="/">Retour</Link>
+        </button>
         </div>
         <div>
           <Footer />
