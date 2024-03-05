@@ -10,7 +10,7 @@ function Securite() {
       </div>
       <h1 className='text-center text-5xl'>Sécuriter</h1>
       <div className='flex justify-center'>
-      <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 rounded-lg mt-12'><Link to="/">Retour</Link></button>
+      <button className='bg-blue-700 hover:bg-blue-500 text-white p-2 px-8 rounded-lg mt-12'><Link to="/">Retour</Link></button>
       </div>
     </div>
   )

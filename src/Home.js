@@ -12,7 +12,7 @@ function Home() {
     <div>
       <LandingPage />
     </div>
-    <div className='flex justify-center align-middle flex-wrap'>
+    <div className='flex justify-center align-middle flex-wrap' id='cards'>
       <div className='flex mx-4 mb-4'>
         <Card 
           imgSrc="https://img.20mn.fr/y0SnXswAR1aNWDdLDnLukQ/1444x920_homme-participe-partie-airsoft-republique-tcheque-illustration"
