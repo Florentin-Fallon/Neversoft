@@ -40,7 +40,7 @@ function Contact() {
       <div className='w-[50%]'>
         <h1 className='text-5xl text-center text-white mb-16' id='contact'>Contact</h1>
         <div className="max-w-md mx-auto">
-          <form onSubmit={handleFormSubmit} className="mb-8">
+          <form onSubmit={handleFormSubmit} className="mb-8 border border-white p-12 rounded-xl">
             <div className="mb-4">
               <label htmlFor="email" className="block text-white text-sm font-semibold mb-2">Adresse e-mail:</label>
               <input
